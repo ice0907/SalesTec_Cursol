@@ -1,0 +1,137 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ツール情報
+model Tool {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String   @db.Text
+  companyId   String
+  company     Company  @relation(fields: [companyId], references: [id])
+  logoUrl     String?
+  url         String?
+  pricingModel String
+  languages   String[]
+  targetSize  String
+  features    String[]
+  stages      Stage[]  @relation("ToolStage")
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  updateHistory ToolUpdateHistory[]
+  categories  ToolCategory[]
+  dataSources DataSource[]
+
+  @@index([companyId])
+  @@index([slug])
+}
+
+// 企業情報
+model Company {
+  id            String   @id @default(cuid())
+  name          String
+  slug          String   @unique
+  description   String   @db.Text
+  logoUrl       String?
+  employeeCount Int?
+  fundingRound  String?
+  fundingAmount Int?
+  tools         Tool[]
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  website       String?
+  location      String?
+  size          String?
+  industry      String?
+  foundedYear   Int?
+  dataSources   DataSource[]
+
+  @@index([slug])
+}
+
+// 営業プロセスのステージ
+model Stage {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String   @db.Text
+  tools       Tool[]   @relation("ToolStage")
+  categories  Category[] @relation("StageCategory")
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([slug])
+}
+
+// ステージ内のカテゴリ
+model Category {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  name        String
+  description String?   @db.Text
+  kpiExamples String?   @db.Text
+  order       Int       // 表示順序
+  parentId    String?   // 親カテゴリID（nullの場合はトップレベル）
+  parent      Category? @relation("CategoryToSubcategory", fields: [parentId], references: [id], onDelete: SetNull)
+  children    Category[] @relation("CategoryToSubcategory")
+  tools       ToolCategory[]
+  stages      Stage[]   @relation("StageCategory")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([slug])
+}
+
+// ツール情報の更新履歴
+model ToolUpdateHistory {
+  id        String   @id @default(cuid())
+  toolId    String
+  tool      Tool     @relation(fields: [toolId], references: [id])
+  updateType String  // AUTO, MANUAL
+  changes   Json     // 変更内容の詳細
+  createdAt DateTime @default(now())
+
+  @@index([toolId])
+  @@index([createdAt])
+}
+
+// データソースの設定
+model DataSource {
+  id          String   @id @default(cuid())
+  name        String
+  type        String   // WEBSITE, API, RSS
+  url         String
+  toolId      String?
+  tool        Tool?    @relation(fields: [toolId], references: [id])
+  companyId   String?
+  company     Company? @relation(fields: [companyId], references: [id])
+  isActive    Boolean  @default(true)
+  lastChecked DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([toolId])
+  @@index([companyId])
+}
+
+// ツールとカテゴリの多対多関連
+model ToolCategory {
+  toolId      String
+  categoryId  String
+  tool        Tool      @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  category    Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([toolId, categoryId])
+} 
