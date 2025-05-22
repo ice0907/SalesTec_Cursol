@@ -5,6 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { allStagesWithTools, getToolBySlug, type ToolWithStage } from "../../../data/tools";
+import { toolDetails } from "../../../data/tool-details";
+import { 
+  BuildingOffice2Icon, 
+  CalendarIcon, 
+  UsersIcon, 
+  CurrencyYenIcon, 
+  BuildingOfficeIcon,
+  MapPinIcon,
+  GlobeAltIcon
+} from '@heroicons/react/24/outline';
 
 // ツール固有データを取得する関数
 function getToolSpecificData(dataObj: Record<string, string[]>, slug: string, defaultValue: string[], toolSlug?: string): string[] {
@@ -622,228 +632,292 @@ const strategyData: Record<string, CompanyStrategy> = {
   }
 };
 
-export default function ToolDetailPage({ params }: { params: { slug: string } }) {
-  const [tool, setTool] = useState<Tool | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState('benefits');
+export default function ToolPage({ params }: { params: { slug: string } }) {
+  const tool = getToolBySlug(params.slug);
+  const details = toolDetails[params.slug];
 
-  useEffect(() => {
-    findTool();
-  }, []);
-
-  const findTool = async () => {
-    try {
-      const foundTool = getToolBySlug(params.slug);
-      if (!foundTool) {
-        notFound();
-        return;
-      }
-      
-      setTool(foundTool);
-    } catch (err) {
-      setError('ツールの読み込み中にエラーが発生しました。');
-      console.error('Error loading tool:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  if (loading) {
-    return <div>Loading...</div>;
+  if (!tool) {
+    notFound();
   }
-
-  if (error || !tool) {
-    return <div>Error: {error}</div>;
-  }
-
-  const benefits = [
-    '高精度な企業・担当者データによる営業効率の大幅向上',
-    'インテントデータを活用したタイムリーな営業機会の発見',
-    'テクノグラフィックデータによる製品適合性の高い見込み客特定',
-    'CRMデータの自動更新による最新情報の維持',
-    '組織図情報によるキーパーソンへの効率的なアプローチ'
-  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        {/* ナビゲーション */}
-        <nav className="flex items-center space-x-4 mb-8">
-          <Link href="/tools" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M10 19l-7-7m0 0l7-7m-7 7h18"
-              />
-            </svg>
-            ツール一覧に戻る
-          </Link>
-          <span className="text-gray-400">/</span>
-          <Link
-            href={`/stages/${tool.stageSlug || tool.stageName.toLowerCase()}`}
-            className="text-sm text-gray-600 hover:text-gray-900"
-          >
-            {tool.stageName}
-          </Link>
-        </nav>
-
-        {/* ツール基本情報 */}
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
+      {/* ヘッダー部分 */}
+      <div className="bg-white shadow">
+        <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-6">
             <div className="relative w-24 h-24">
               <Image
                 src={tool.logoUrl}
-                alt={`${tool.name}のロゴ`}
+                alt={`${tool.name} logo`}
                 fill
-                className="object-contain"
+                className="object-contain rounded-lg"
               />
             </div>
             <div>
               <h1 className="text-3xl font-bold text-gray-900">{tool.name}</h1>
-              <p className="text-lg text-gray-600 mt-2">{tool.description}</p>
+              <p className="mt-1 text-lg text-gray-500">{tool.description}</p>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* メインコンテンツ */}
-        <div className="bg-white rounded-lg shadow-lg">
-          {/* タブナビゲーション */}
-          <div className="flex border-b">
-            <button
-              onClick={() => setActiveTab('overview')}
-              className={`px-6 py-3 text-sm font-medium ${
-                activeTab === 'overview'
-                  ? 'text-indigo-600 border-b-2 border-indigo-500'
-                  : 'text-gray-600 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-300'
-              }`}
-            >
-              概要と特徴
-            </button>
-            <button
-              onClick={() => setActiveTab('usecases')}
-              className={`px-6 py-3 text-sm font-medium ${
-                activeTab === 'usecases'
-                  ? 'text-indigo-600 border-b-2 border-indigo-500'
-                  : 'text-gray-600 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-300'
-              }`}
-            >
-              主な利用シーン
-            </button>
-            <button
-              onClick={() => setActiveTab('benefits')}
-              className={`px-6 py-3 text-sm font-medium ${
-                activeTab === 'benefits'
-                  ? 'text-indigo-600 border-b-2 border-indigo-500'
-                  : 'text-gray-600 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-300'
-              }`}
-            >
-              導入メリット
-            </button>
-            <button
-              onClick={() => setActiveTab('reviews')}
-              className={`px-6 py-3 text-sm font-medium ${
-                activeTab === 'reviews'
-                  ? 'text-indigo-600 border-b-2 border-indigo-500'
-                  : 'text-gray-600 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-300'
-              }`}
-            >
-              ユーザーレビュー
-            </button>
-            <button
-              onClick={() => setActiveTab('comparison')}
-              className={`px-6 py-3 text-sm font-medium ${
-                activeTab === 'comparison'
-                  ? 'text-indigo-600 border-b-2 border-indigo-500'
-                  : 'text-gray-600 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-300'
-              }`}
-            >
-              競合比較
-            </button>
-          </div>
+      <main className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* メイン情報 */}
+          <div className="lg:col-span-2 space-y-8">
+            {/* 会社概要 */}
+            <section className="bg-white shadow rounded-lg p-6">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">会社概要</h2>
+              {details && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <BuildingOffice2Icon className="h-6 w-6 text-gray-400" />
+                      <div>
+                        <p className="text-sm text-gray-500">会社名</p>
+                        <p className="text-base font-medium">{details.company.name}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CalendarIcon className="h-6 w-6 text-gray-400" />
+                      <div>
+                        <p className="text-sm text-gray-500">設立</p>
+                        <p className="text-base font-medium">{details.company.foundedDate}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <UsersIcon className="h-6 w-6 text-gray-400" />
+                      <div>
+                        <p className="text-sm text-gray-500">従業員数</p>
+                        <p className="text-base font-medium">{details.company.employeeCount}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CurrencyYenIcon className="h-6 w-6 text-gray-400" />
+                      <div>
+                        <p className="text-sm text-gray-500">売上高</p>
+                        <p className="text-base font-medium">{details.company.revenue}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <BuildingOfficeIcon className="h-6 w-6 text-gray-400" />
+                      <div>
+                        <p className="text-sm text-gray-500">導入企業数</p>
+                        <p className="text-base font-medium">{details.company.customerCount}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <MapPinIcon className="h-6 w-6 text-gray-400" />
+                      <div>
+                        <p className="text-sm text-gray-500">本社所在地</p>
+                        <p className="text-base font-medium">{details.company.headquarters}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <GlobeAltIcon className="h-6 w-6 text-gray-400" />
+                      <div>
+                        <p className="text-sm text-gray-500">Webサイト</p>
+                        <a
+                          href={details.company.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-base font-medium text-blue-600 hover:text-blue-500"
+                        >
+                          {details.company.website}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </section>
 
-          {/* タブコンテンツ */}
-          <div className="p-6">
-            {activeTab === 'overview' && (
-              <div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-4">概要と特徴</h2>
-                <p className="text-gray-700">{tool.detailedDescription}</p>
-                {tool.features && tool.features.length > 0 && (
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-gray-900 mb-3">主な機能</h3>
-                    <ul className="space-y-2">
-                      {tool.features.map((feature, index) => (
-                        <li key={index} className="flex items-start">
-                          <span className="flex-shrink-0 h-5 w-5 text-indigo-500">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                          </span>
-                          <span className="ml-2 text-gray-700">{feature}</span>
-                        </li>
+            {/* 主要導入企業 */}
+            {details && details.company.notableCustomers.length > 0 && (
+              <section className="bg-white shadow rounded-lg p-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">主要導入企業</h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {details.company.notableCustomers.map((customer, index) => (
+                    <div
+                      key={index}
+                      className="bg-gray-50 rounded-lg p-4 text-center"
+                    >
+                      <p className="font-medium text-gray-900">{customer}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* プロダクトライナップ */}
+            {details && details.products.length > 0 && (
+              <section className="bg-white shadow rounded-lg p-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">プロダクトラインナップ</h2>
+                <div className="space-y-8">
+                  {details.products.map((product, index) => (
+                    <div key={index} className="border-b border-gray-200 pb-6 last:border-0 last:pb-0">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-3">{product.name}</h3>
+                      <p className="text-gray-600 mb-4">{product.description}</p>
+                      
+                      {/* 主要機能 */}
+                      <div className="mb-4">
+                        <h4 className="text-lg font-medium text-gray-900 mb-2">主要機能</h4>
+                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                          {product.features.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-center">
+                              <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* 料金プラン */}
+                      <div>
+                        <h4 className="text-lg font-medium text-gray-900 mb-2">料金プラン</h4>
+                        <p className="text-gray-600 mb-3">{product.pricing.model}</p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          {product.pricing.plans.map((plan, planIndex) => (
+                            <div
+                              key={planIndex}
+                              className="border border-gray-200 rounded-lg p-4"
+                            >
+                              <h5 className="font-medium text-gray-900">{plan.name}</h5>
+                              <p className="text-blue-600 font-bold my-2">{plan.price}</p>
+                              <p className="text-sm text-gray-500">{plan.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* 4C分析 */}
+            {details && (
+              <section className="bg-white shadow rounded-lg p-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">4C分析</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Customer */}
+                  <div className="border border-gray-200 rounded-lg p-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Customer（市場・顧客）</h3>
+                    <ul className="list-disc list-inside mb-3 space-y-2">
+                      {details.fourC.customer.points.map((point, index) => (
+                        <li key={index} className="text-gray-600">{point}</li>
                       ))}
                     </ul>
+                    <p className="text-sm text-gray-500">{details.fourC.customer.analysis}</p>
                   </div>
-                )}
-              </div>
-            )}
 
-            {activeTab === 'usecases' && (
-              <div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-4">主な利用シーン</h2>
-                {/* 利用シーンの内容をここに実装 */}
-              </div>
-            )}
+                  {/* Competitor */}
+                  <div className="border border-gray-200 rounded-lg p-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Competitor（競合）</h3>
+                    <ul className="list-disc list-inside mb-3 space-y-2">
+                      {details.fourC.competitor.points.map((point, index) => (
+                        <li key={index} className="text-gray-600">{point}</li>
+                      ))}
+                    </ul>
+                    <p className="text-sm text-gray-500">{details.fourC.competitor.analysis}</p>
+                  </div>
 
-            {activeTab === 'benefits' && (
-              <div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-4">導入メリット</h2>
-                <ul className="space-y-4">
-                  {benefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start">
-                      <svg
-                        className="w-5 h-5 text-green-500 mt-1 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      <span className="text-gray-700">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+                  {/* Company */}
+                  <div className="border border-gray-200 rounded-lg p-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Company（自社）</h3>
+                    <ul className="list-disc list-inside mb-3 space-y-2">
+                      {details.fourC.company.points.map((point, index) => (
+                        <li key={index} className="text-gray-600">{point}</li>
+                      ))}
+                    </ul>
+                    <p className="text-sm text-gray-500">{details.fourC.company.analysis}</p>
+                  </div>
 
-            {activeTab === 'reviews' && (
-              <div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-4">ユーザーレビュー</h2>
-                {/* レビューの内容をここに実装 */}
-              </div>
-            )}
+                  {/* Commodity */}
+                  <div className="border border-gray-200 rounded-lg p-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Commodity（商品）</h3>
+                    <ul className="list-disc list-inside mb-3 space-y-2">
+                      {details.fourC.commodity.points.map((point, index) => (
+                        <li key={index} className="text-gray-600">{point}</li>
+                      ))}
+                    </ul>
+                    <p className="text-sm text-gray-500">{details.fourC.commodity.analysis}</p>
+                  </div>
+                </div>
 
-            {activeTab === 'comparison' && (
-              <div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-4">競合比較</h2>
-                {/* 競合比較の内容をここに実装 */}
-              </div>
+                {/* 戦略 */}
+                <div className="mt-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">今後の戦略</h3>
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-2">短期戦略</h4>
+                      <ul className="list-disc list-inside space-y-1">
+                        {details.fourC.strategy.shortTerm.map((strategy, index) => (
+                          <li key={index} className="text-gray-600">{strategy}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-2">中期戦略</h4>
+                      <ul className="list-disc list-inside space-y-1">
+                        {details.fourC.strategy.midTerm.map((strategy, index) => (
+                          <li key={index} className="text-gray-600">{strategy}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-2">長期戦略</h4>
+                      <ul className="list-disc list-inside space-y-1">
+                        {details.fourC.strategy.longTerm.map((strategy, index) => (
+                          <li key={index} className="text-gray-600">{strategy}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             )}
           </div>
+
+          {/* サイドバー */}
+          <div className="lg:col-span-1 space-y-6">
+            {/* ステージ情報 */}
+            <div className="bg-white shadow rounded-lg p-6">
+              <h3 className="text-lg font-medium text-gray-900 mb-4">ステージ情報</h3>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-sm text-gray-500">ステージ</p>
+                  <p className="font-medium">{tool.stageName}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500">対象企業規模</p>
+                  <p className="font-medium">{tool.targetSize}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500">価格モデル</p>
+                  <p className="font-medium">{tool.pricingModel}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500">対応言語</p>
+                  <div className="flex flex-wrap gap-2 mt-1">
+                    {tool.languages.map((lang, index) => (
+                      <span
+                        key={index}
+                        className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800"
+                      >
+                        {lang === 'ja' ? '日本語' : lang === 'en' ? '英語' : lang}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 } 
