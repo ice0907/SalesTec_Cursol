@@ -7127,5 +7127,467 @@ export const toolDetails: Record<string, {
         ]
       }
     }
+  },
+  'userpilot': {
+    company: {
+      name: 'Userpilot',
+      foundedDate: '2017年',
+      employeeCount: '約100人（2023年）',
+      revenue: '約30億円（2023年度）',
+      customerCount: '1,000社以上',
+      notableCustomers: ['Typeform', 'Hotjar', 'Segment', 'Calendly', 'Miro'],
+      headquarters: 'ニューヨーク、ニューヨーク州、アメリカ',
+      website: 'https://userpilot.com'
+    },
+    products: [
+      {
+        name: 'Userpilot',
+        description: 'プロダクト体験・ユーザーオンボーディング最適化プラットフォーム',
+        features: [
+          'ユーザーオンボーディング',
+          'プロダクトツアー',
+          'インアプリメッセージング',
+          'ユーザー分析',
+          'A/Bテスト',
+          'セグメンテーション',
+          'フィードバック収集',
+          'ユーザー行動追跡'
+        ],
+        pricing: {
+          model: 'サブスクリプション',
+          plans: [
+            { name: 'Starter', price: '¥32,000', description: '基本オンボーディング機能' },
+            { name: 'Growth', price: '¥64,000', description: '高度な分析、A/Bテスト' },
+            { name: 'Enterprise', price: '要相談', description: 'カスタム機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['SaaS企業', 'プロダクトチーム', 'スタートアップ']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'ノーコードオンボーディング',
+          'リアルタイム分析',
+          'パーソナライゼーション',
+          'プロダクト体験最適化'
+        ],
+        analysis: 'ノーコードでプロダクト体験を最適化し、ユーザーのアクティベーションと定着率を向上させる包括的なソリューション'
+      },
+      competitor: {
+        points: [
+          'Pendo、WalkMeとの競合',
+          'ノーコードの差別化',
+          'プロダクト特化の優位性',
+          'SaaS特化の強み'
+        ],
+        analysis: 'ユーザーオンボーディング市場で、ノーコードとプロダクト体験特化を武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'アメリカ発のプロダクト体験企業',
+          'SaaS重視',
+          '急速な成長',
+          'ユーザー体験特化'
+        ],
+        analysis: 'プロダクト体験最適化のリーダーとして、SaaS企業のユーザーオンボーディング市場で独自のポジションを確立'
+      },
+      commodity: {
+        points: [
+          'プロダクト体験最適化プラットフォーム',
+          'ユーザーオンボーディングツール',
+          'インアプリエンゲージメントツール',
+          'SaaS分析プラットフォーム'
+        ],
+        analysis: 'プロダクト体験・ユーザーオンボーディング最適化プラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の追加',
+          'ユーザー体験の向上',
+          '統合機能の拡充'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新機能の追加'
+        ],
+        longTerm: [
+          'プロダクト体験最適化市場のリーダーポジション確立',
+          'AI駆動パーソナライゼーションの実現',
+          '包括的なプロダクト成長プラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'intercom-onboarding': {
+    company: {
+      name: 'Intercom',
+      foundedDate: '2011年',
+      employeeCount: '約1,000人（2023年）',
+      revenue: '約300億円（2023年度）',
+      customerCount: '2万5,000社以上',
+      notableCustomers: ['Shopify', 'New Relic', 'Sotheby\'s', 'Atlassian', 'Amazon'],
+      headquarters: 'サンフランシスコ、カリフォルニア州、アメリカ',
+      website: 'https://intercom.com'
+    },
+    products: [
+      {
+        name: 'Intercom',
+        description: 'カスタマーコミュニケーション・オンボーディングプラットフォーム',
+        features: [
+          'ライブチャット',
+          'ユーザーオンボーディング',
+          'インアプリメッセージング',
+          'ヘルプデスク',
+          'ナレッジベース',
+          'チャットボット',
+          'カスタマーデータ',
+          'オートメーション'
+        ],
+        pricing: {
+          model: 'サブスクリプション',
+          plans: [
+            { name: 'Starter', price: '¥9,900', description: 'ライブチャット、基本機能' },
+            { name: 'Pro', price: '¥132,000', description: 'オンボーディング、高度な機能' },
+            { name: 'Premium', price: '要相談', description: 'カスタム機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['SaaS企業', 'Eコマース', 'スタートアップ']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          '統合カスタマーコミュニケーション',
+          'リアルタイムサポート',
+          'パーソナライズドメッセージング',
+          'オムニチャネル対応'
+        ],
+        analysis: '統合されたカスタマーコミュニケーションプラットフォームにより、ユーザーオンボーディングからサポートまで一貫した体験を提供'
+      },
+      competitor: {
+        points: [
+          'Zendesk、Freshworksとの競合',
+          '統合プラットフォームの差別化',
+          'リアルタイム性の優位性',
+          'SaaS特化の強み'
+        ],
+        analysis: 'カスタマーコミュニケーション市場で、統合プラットフォームとリアルタイム性を武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'アイルランド発のカスタマーコミュニケーション企業',
+          'SaaS重視',
+          '急速な成長',
+          'ユーザー体験特化'
+        ],
+        analysis: 'カスタマーコミュニケーションのリーダーとして、SaaS企業のカスタマーエンゲージメント市場で存在感を発揮'
+      },
+      commodity: {
+        points: [
+          'カスタマーコミュニケーションプラットフォーム',
+          'ユーザーオンボーディングツール',
+          'ライブチャットツール',
+          'カスタマーサポートプラットフォーム'
+        ],
+        analysis: 'カスタマーコミュニケーション・オンボーディングプラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の強化',
+          'ユーザー体験の向上',
+          '統合機能の拡充'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新機能の追加'
+        ],
+        longTerm: [
+          'カスタマーコミュニケーション市場のリーダーポジション維持',
+          'AI駆動カスタマーエンゲージメントの実現',
+          '包括的なカスタマー体験プラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'zendesk-onboarding': {
+    company: {
+      name: 'Zendesk',
+      foundedDate: '2007年',
+      employeeCount: '約6,000人（2023年）',
+      revenue: '約2,000億円（2023年度）',
+      customerCount: '16万社以上',
+      notableCustomers: ['Airbnb', 'Uber', 'Shopify', 'Slack', 'Box'],
+      headquarters: 'サンフランシスコ、カリフォルニア州、アメリカ',
+      website: 'https://zendesk.com'
+    },
+    products: [
+      {
+        name: 'Zendesk',
+        description: 'エンタープライズカスタマーサービス・オンボーディングプラットフォーム',
+        features: [
+          'チケット管理',
+          'ユーザーオンボーディング',
+          'ナレッジベース',
+          'ライブチャット',
+          'コミュニティフォーラム',
+          'アナリティクス',
+          'ワークフロー自動化',
+          'マルチチャネルサポート'
+        ],
+        pricing: {
+          model: 'サブスクリプション',
+          plans: [
+            { name: 'Suite Team', price: '¥6,900', description: '基本サポート機能' },
+            { name: 'Suite Growth', price: '¥11,500', description: '高度な機能、オンボーディング' },
+            { name: 'Suite Professional', price: '¥14,900', description: 'エンタープライズ機能' },
+            { name: 'Suite Enterprise', price: '¥20,700', description: 'カスタム機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['エンタープライズ', '大企業', 'カスタマーサービス重視企業']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'エンタープライズグレード機能',
+          'マルチチャネル対応',
+          'スケーラビリティ',
+          '豊富な統合オプション'
+        ],
+        analysis: 'エンタープライズグレードのカスタマーサービスプラットフォームにより、大規模なユーザーオンボーディングとサポートを実現'
+      },
+      competitor: {
+        points: [
+          'Freshworks、Intercomとの競合',
+          'エンタープライズ特化の差別化',
+          'スケーラビリティの優位性',
+          'マルチチャネルの強み'
+        ],
+        analysis: 'カスタマーサービス市場で、エンタープライズ特化とスケーラビリティを武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'アメリカ発のカスタマーサービス企業',
+          'エンタープライズ重視',
+          '安定した成長',
+          'カスタマー体験特化'
+        ],
+        analysis: 'エンタープライズカスタマーサービスのリーダーとして、大企業のカスタマーサポート市場で圧倒的な存在感を発揮'
+      },
+      commodity: {
+        points: [
+          'エンタープライズカスタマーサービスプラットフォーム',
+          'ユーザーオンボーディングツール',
+          'チケット管理システム',
+          'ナレッジベースプラットフォーム'
+        ],
+        analysis: 'エンタープライズカスタマーサービス・オンボーディングプラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の強化',
+          'ユーザー体験の向上',
+          '統合機能の拡充'
+        ],
+        midTerm: [
+          '新興市場への展開',
+          'AI駆動サポートの実現',
+          '新機能の追加'
+        ],
+        longTerm: [
+          'エンタープライズカスタマーサービス市場のリーダーポジション維持',
+          'AI駆動カスタマー体験の実現',
+          '包括的なカスタマー体験プラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'freshworks-onboarding': {
+    company: {
+      name: 'Freshworks',
+      foundedDate: '2010年',
+      employeeCount: '約5,000人（2023年）',
+      revenue: '約700億円（2023年度）',
+      customerCount: '6万社以上',
+      notableCustomers: ['Honda', 'Klarna', 'Bridgestone', 'Nucor', 'Toshiba'],
+      headquarters: 'サンマテオ、カリフォルニア州、アメリカ',
+      website: 'https://freshworks.com'
+    },
+    products: [
+      {
+        name: 'Freshworks',
+        description: '統合ビジネスソフトウェア・オンボーディングプラットフォーム',
+        features: [
+          'カスタマーサポート',
+          'ユーザーオンボーディング',
+          'CRM',
+          'マーケティング自動化',
+          'IT サービス管理',
+          'ライブチャット',
+          'ナレッジベース',
+          'アナリティクス'
+        ],
+        pricing: {
+          model: 'サブスクリプション',
+          plans: [
+            { name: 'Freshdesk Starter', price: '¥2,200', description: '基本サポート機能' },
+            { name: 'Freshdesk Growth', price: '¥3,500', description: '高度な機能、オンボーディング' },
+            { name: 'Freshdesk Pro', price: '¥6,900', description: 'エンタープライズ機能' },
+            { name: 'Freshdesk Enterprise', price: '¥11,500', description: 'カスタム機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['中小企業', 'エンタープライズ', '統合ソリューション重視企業']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          '統合ビジネスソフトウェア',
+          'コストパフォーマンス',
+          '使いやすいインターフェース',
+          '豊富な機能セット'
+        ],
+        analysis: '統合されたビジネスソフトウェアスイートにより、カスタマーサポートからオンボーディングまで一元管理を実現'
+      },
+      competitor: {
+        points: [
+          'Zendesk、Salesforceとの競合',
+          '統合スイートの差別化',
+          'コストパフォーマンスの優位性',
+          '中小企業特化の強み'
+        ],
+        analysis: 'ビジネスソフトウェア市場で、統合スイートとコストパフォーマンスを武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'インド発のビジネスソフトウェア企業',
+          '統合ソリューション重視',
+          '急速な成長',
+          '中小企業特化'
+        ],
+        analysis: '統合ビジネスソフトウェアのリーダーとして、中小企業のデジタル変革市場で存在感を発揮'
+      },
+      commodity: {
+        points: [
+          '統合ビジネスソフトウェアスイート',
+          'ユーザーオンボーディングツール',
+          'カスタマーサポートプラットフォーム',
+          'CRM・マーケティング統合ツール'
+        ],
+        analysis: '統合ビジネスソフトウェア・オンボーディングプラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の追加',
+          'ユーザー体験の向上',
+          '統合機能の強化'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新機能の追加'
+        ],
+        longTerm: [
+          '統合ビジネスソフトウェア市場のリーダーポジション確立',
+          'AI駆動ビジネス自動化の実現',
+          '包括的なビジネスプラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'gainsight-onboarding': {
+    company: {
+      name: 'Gainsight',
+      foundedDate: '2013年',
+      employeeCount: '約1,000人（2023年）',
+      revenue: '約200億円（2023年度）',
+      customerCount: '1,000社以上',
+      notableCustomers: ['Adobe', 'Box', 'DocuSign', 'Okta', 'Zoom'],
+      headquarters: 'サンフランシスコ、カリフォルニア州、アメリカ',
+      website: 'https://gainsight.com'
+    },
+    products: [
+      {
+        name: 'Gainsight',
+        description: 'カスタマーサクセス・オンボーディング管理プラットフォーム',
+        features: [
+          'カスタマーサクセス管理',
+          'ユーザーオンボーディング',
+          'ヘルススコア',
+          'チャーン予測',
+          'プロダクト分析',
+          'カスタマージャーニー',
+          'アカウント管理',
+          'レポート・ダッシュボード'
+        ],
+        pricing: {
+          model: 'サブスクリプション',
+          plans: [
+            { name: 'Essentials', price: '¥19,800', description: '基本カスタマーサクセス機能' },
+            { name: 'Growth', price: '¥39,600', description: '高度な分析、オンボーディング' },
+            { name: 'Enterprise', price: '要相談', description: 'カスタム機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['SaaS企業', 'エンタープライズ', 'カスタマーサクセス重視企業']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'カスタマーサクセス特化',
+          'AI駆動インサイト',
+          'プロダクト分析統合',
+          'チャーン予測'
+        ],
+        analysis: 'カスタマーサクセスに特化したプラットフォームにより、ユーザーオンボーディングから継続利用まで包括的に管理'
+      },
+      competitor: {
+        points: [
+          'ChurnZero、Totangoとの競合',
+          'カスタマーサクセス特化の差別化',
+          'AI分析の優位性',
+          'SaaS特化の強み'
+        ],
+        analysis: 'カスタマーサクセス市場で、AI駆動分析とSaaS特化機能を武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'アメリカ発のカスタマーサクセス企業',
+          'SaaS重視',
+          '急速な成長',
+          'カスタマーサクセス特化'
+        ],
+        analysis: 'カスタマーサクセスのリーダーとして、SaaS企業のカスタマーリテンション市場で独自のポジションを確立'
+      },
+      commodity: {
+        points: [
+          'カスタマーサクセス管理プラットフォーム',
+          'ユーザーオンボーディングツール',
+          'チャーン予測ツール',
+          'プロダクト分析プラットフォーム'
+        ],
+        analysis: 'カスタマーサクセス・オンボーディング管理プラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の強化',
+          'プロダクト分析の深化',
+          'ユーザー体験の向上'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新機能の追加'
+        ],
+        longTerm: [
+          'カスタマーサクセス市場のリーダーポジション維持',
+          'AI駆動カスタマーインテリジェンスの実現',
+          '包括的なカスタマー体験プラットフォームへの進化'
+        ]
+      }
+    }
   }
-};                                                                          
+};                                                                             
