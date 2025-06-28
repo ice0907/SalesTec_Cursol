@@ -2118,5 +2118,476 @@ export const toolDetails: Record<string, {
         ]
       }
     }
+  },
+  'agile-crm': {
+    company: {
+      name: 'Agile CRM Inc.',
+      foundedDate: '2013年',
+      employeeCount: '約100人（2023年）',
+      revenue: '約50億円（2023年度）',
+      customerCount: '15,000社以上',
+      notableCustomers: [
+        'Skullcandy',
+        'Groupon',
+        'Walmart',
+        'Panasonic',
+        'Accenture'
+      ],
+      headquarters: 'テキサス州ダラス、アメリカ',
+      website: 'https://www.agilecrm.com/'
+    },
+    products: [
+      {
+        name: 'Agile CRM',
+        description: 'オールインワンCRMソリューション',
+        features: [
+          '連絡先・リード管理',
+          'メール自動化',
+          'ソーシャルCRM',
+          'ウェブ分析',
+          'ヘルプデスク機能',
+          'プロジェクト管理',
+          'モバイルアプリ',
+          'API統合'
+        ],
+        pricing: {
+          model: 'フリーミアム（月額/ユーザー）',
+          plans: [
+            {
+              name: 'Free',
+              price: '¥0',
+              description: '10ユーザーまで、基本CRM機能'
+            },
+            {
+              name: 'Starter',
+              price: '¥1,000',
+              description: 'メール自動化、ウェブ分析機能'
+            },
+            {
+              name: 'Regular',
+              price: '¥3,000',
+              description: 'ヘルプデスク、カスタムフィールド'
+            },
+            {
+              name: 'Enterprise',
+              price: '¥6,000',
+              description: '高度な自動化、カスタムダッシュボード'
+            }
+          ]
+        },
+        targetMarket: [
+          'スタートアップ',
+          '中小企業',
+          'ミッドマーケット'
+        ]
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          '中小企業向けの手頃な価格設定',
+          'オールインワンソリューション',
+          '使いやすいインターフェース',
+          '無料プランの提供'
+        ],
+        analysis: '中小企業が求める包括的なCRM機能を手頃な価格で提供し、成長段階の企業に最適'
+      },
+      competitor: {
+        points: [
+          'HubSpotとの価格競争',
+          'Salesforceとの機能比較',
+          'Zoho CRMとの市場競合',
+          'Pipedriveとの使いやすさ競争'
+        ],
+        analysis: '大手CRMベンダーに対して価格優位性とオールインワン機能で差別化を図る'
+      },
+      company: {
+        points: [
+          '中小企業市場への特化',
+          '継続的な機能追加',
+          '顧客サポートの充実',
+          'パートナーエコシステムの構築'
+        ],
+        analysis: '中小企業セグメントでの強いポジションを活かし、顧客満足度向上に注力'
+      },
+      commodity: {
+        points: [
+          'CRM、マーケティング、サービス統合',
+          'AI機能の段階的導入',
+          'モバイルファーストの設計',
+          'サードパーティ統合の拡充'
+        ],
+        analysis: '包括的な機能セットと使いやすさにより、中小企業の業務効率化を実現'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の強化',
+          'ユーザー体験の改善',
+          '新規統合の追加'
+        ],
+        midTerm: [
+          '中堅企業市場への展開',
+          '業界特化機能の開発',
+          'グローバル展開の加速'
+        ],
+        longTerm: [
+          'エンタープライズ市場への参入',
+          '次世代CRM技術の導入',
+          'プラットフォーム化の推進'
+        ]
+      }
+    }
+  },
+  'monday-crm': {
+    company: {
+      name: 'monday.com Ltd.',
+      foundedDate: '2012年',
+      employeeCount: '約1,500人（2023年）',
+      revenue: '約800億円（2023年度）',
+      customerCount: '15万社以上',
+      notableCustomers: [
+        'Coca-Cola',
+        'Adobe',
+        'Universal Music Group',
+        'WeWork',
+        'Canva'
+      ],
+      headquarters: 'テルアビブ、イスラエル',
+      website: 'https://monday.com/crm/'
+    },
+    products: [
+      {
+        name: 'monday sales CRM',
+        description: 'ビジュアルで直感的なCRMプラットフォーム',
+        features: [
+          'ビジュアルパイプライン管理',
+          'カスタマイズ可能なダッシュボード',
+          'メール統合',
+          '自動化ワークフロー',
+          'レポート・分析',
+          'モバイルアプリ',
+          'チームコラボレーション',
+          'API統合'
+        ],
+        pricing: {
+          model: 'サブスクリプション（月額/ユーザー）',
+          plans: [
+            {
+              name: 'Basic',
+              price: '¥1,200',
+              description: '基本CRM機能、3ボードまで'
+            },
+            {
+              name: 'Standard',
+              price: '¥1,500',
+              description: 'タイムライン、カレンダー表示'
+            },
+            {
+              name: 'Pro',
+              price: '¥2,400',
+              description: '高度な自動化、統合機能'
+            },
+            {
+              name: 'Enterprise',
+              price: '要問い合わせ',
+              description: 'エンタープライズ機能、専用サポート'
+            }
+          ]
+        },
+        targetMarket: [
+          '中小企業',
+          'ミッドマーケット',
+          'エンタープライズ'
+        ]
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'ビジュアルで直感的なインターフェース',
+          '高いカスタマイズ性',
+          'チームコラボレーション機能',
+          '豊富なテンプレート'
+        ],
+        analysis: '従来のCRMに不満を持つチームに、視覚的で使いやすいソリューションを提供'
+      },
+      competitor: {
+        points: [
+          'Asanaとのプロジェクト管理競争',
+          'Salesforceとの機能比較',
+          'Notionとの柔軟性競争',
+          'Airtableとのデータベース機能比較'
+        ],
+        analysis: 'ビジュアルデザインと使いやすさで従来のCRMベンダーとの差別化を実現'
+      },
+      company: {
+        points: [
+          '急速な成長と市場拡大',
+          '継続的な機能革新',
+          '強力なマーケティング戦略',
+          'グローバル展開の推進'
+        ],
+        analysis: '革新的なアプローチと強力な成長戦略により、CRM市場での地位を確立'
+      },
+      commodity: {
+        points: [
+          'ワークOS プラットフォーム',
+          'ノーコード自動化',
+          '豊富な統合オプション',
+          'リアルタイムコラボレーション'
+        ],
+        analysis: 'プラットフォームアプローチにより、CRMを超えた包括的なワークソリューションを提供'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の統合',
+          'モバイル体験の向上',
+          '新規統合の追加'
+        ],
+        midTerm: [
+          '業界特化ソリューションの開発',
+          'エンタープライズ機能の強化',
+          'グローバル市場での拡大'
+        ],
+        longTerm: [
+          'ワークOSエコシステムの完成',
+          '次世代コラボレーション技術の導入',
+          '新規市場セグメントの開拓'
+        ]
+      }
+    }
+  },
+  'pipedrive': {
+    company: {
+      name: 'Pipedrive OÜ',
+      foundedDate: '2010年',
+      employeeCount: '約1,000人（2023年）',
+      revenue: '約150億円（2023年度）',
+      customerCount: '10万社以上',
+      notableCustomers: [
+        'Amazon',
+        'Skype',
+        'RE/MAX',
+        'Vimeo',
+        'Teamwork'
+      ],
+      headquarters: 'タリン、エストニア',
+      website: 'https://www.pipedrive.com/ja/'
+    },
+    products: [
+      {
+        name: 'Pipedrive CRM',
+        description: '営業活動に特化したシンプルなCRM',
+        features: [
+          'ビジュアルパイプライン',
+          '活動管理',
+          'メール統合',
+          '営業レポート',
+          'モバイルアプリ',
+          'ワークフロー自動化',
+          'ウェブフォーム',
+          'API統合'
+        ],
+        pricing: {
+          model: 'サブスクリプション（月額/ユーザー）',
+          plans: [
+            {
+              name: 'Essential',
+              price: '¥1,500',
+              description: '基本CRM機能、メール統合'
+            },
+            {
+              name: 'Advanced',
+              price: '¥2,500',
+              description: '自動化、レポート機能'
+            },
+            {
+              name: 'Professional',
+              price: '¥5,000',
+              description: '高度な分析、カスタムフィールド'
+            },
+            {
+              name: 'Enterprise',
+              price: '¥10,000',
+              description: 'エンタープライズ機能、専用サポート'
+            }
+          ]
+        },
+        targetMarket: [
+          '中小企業',
+          'ミッドマーケット',
+          '営業チーム'
+        ]
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          '営業活動に特化した設計',
+          'シンプルで使いやすいUI',
+          '迅速な導入・設定',
+          '手頃な価格設定'
+        ],
+        analysis: '営業チームが実際に使いたくなるシンプルで効果的なCRMを求める企業に最適'
+      },
+      competitor: {
+        points: [
+          'HubSpotとの機能比較',
+          'Salesforceとの価格競争',
+          'Zoho CRMとの使いやすさ競争',
+          'Monday.comとのビジュアル機能比較'
+        ],
+        analysis: '営業特化とシンプルさで大手CRMベンダーとの差別化を実現'
+      },
+      company: {
+        points: [
+          '営業チーム向け特化戦略',
+          '継続的なUX改善',
+          '中小企業市場での強いポジション',
+          'グローバル展開の推進'
+        ],
+        analysis: '営業特化戦略により、特定セグメントでの強固なポジションを確立'
+      },
+      commodity: {
+        points: [
+          '営業パイプライン管理',
+          'シンプルな自動化機能',
+          '豊富な統合オプション',
+          'モバイルファースト設計'
+        ],
+        analysis: '営業活動の効率化に特化した機能セットにより、高い顧客満足度を実現'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の段階的導入',
+          'モバイル体験の向上',
+          '新規統合の追加'
+        ],
+        midTerm: [
+          '中堅企業市場への展開',
+          'マーケティング機能の強化',
+          'アジア市場での拡大'
+        ],
+        longTerm: [
+          '包括的な営業プラットフォーム化',
+          '次世代営業技術の導入',
+          '新規市場セグメントの開拓'
+        ]
+      }
+    }
+  },
+  'linkedin-sales-navigator': {
+    company: {
+      name: 'LinkedIn Corporation',
+      foundedDate: '2003年',
+      employeeCount: '約20,000人（2023年）',
+      revenue: '約1.5兆円（2023年度）',
+      customerCount: '9億人以上のユーザー',
+      notableCustomers: [
+        'Microsoft',
+        'Salesforce',
+        'Adobe',
+        'Oracle',
+        'IBM'
+      ],
+      headquarters: 'サニーベール、カリフォルニア州、アメリカ',
+      website: 'https://business.linkedin.com/sales-solutions/sales-navigator'
+    },
+    products: [
+      {
+        name: 'LinkedIn Sales Navigator',
+        description: 'プロフェッショナルネットワークを活用した営業支援ツール',
+        features: [
+          '高度な検索・フィルタリング',
+          'リード推奨機能',
+          'InMailメッセージング',
+          'CRM統合',
+          '営業インサイト',
+          'チーム機能',
+          'リアルタイム通知',
+          'モバイルアプリ'
+        ],
+        pricing: {
+          model: 'サブスクリプション（月額/ユーザー）',
+          plans: [
+            {
+              name: 'Core',
+              price: '¥8,000',
+              description: '基本検索、InMail 20通/月'
+            },
+            {
+              name: 'Advanced',
+              price: '¥12,000',
+              description: '高度な検索、InMail 30通/月'
+            },
+            {
+              name: 'Advanced Plus',
+              price: '¥18,000',
+              description: 'チーム機能、InMail 50通/月'
+            }
+          ]
+        },
+        targetMarket: [
+          'B2B営業チーム',
+          'エンタープライズ',
+          '営業代行会社'
+        ]
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'B2B営業に特化した機能',
+          '豊富なプロフェッショナルデータ',
+          '高い到達率とエンゲージメント',
+          'CRMとの統合機能'
+        ],
+        analysis: 'B2B営業において最も効果的なプロスペクティングツールとして広く認知'
+      },
+      competitor: {
+        points: [
+          'ZoomInfoとのデータ品質競争',
+          'Outreachとの営業自動化競争',
+          'HubSpotとの統合機能比較',
+          'Apolloとの価格競争'
+        ],
+        analysis: 'LinkedInプラットフォームの独自性により、他の営業ツールとは異なるポジションを確立'
+      },
+      company: {
+        points: [
+          'Microsoftによる強力なバックアップ',
+          '継続的なプラットフォーム改善',
+          'グローバルネットワークの拡大',
+          'AI技術の積極的な導入'
+        ],
+        analysis: 'プロフェッショナルネットワークのリーダーとして、営業分野での影響力を拡大'
+      },
+      commodity: {
+        points: [
+          'プロフェッショナルネットワーク',
+          'AI駆動のリード推奨',
+          'リアルタイムインサイト',
+          '包括的なCRM統合'
+        ],
+        analysis: '独自のネットワークデータとAI技術により、他では得られない営業インサイトを提供'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の強化',
+          'CRM統合の拡充',
+          'ユーザー体験の改善'
+        ],
+        midTerm: [
+          'グローバル市場での拡大',
+          '業界特化機能の開発',
+          'パートナーエコシステムの強化'
+        ],
+        longTerm: [
+          '次世代営業プラットフォームの構築',
+          'AI営業アシスタントの開発',
+          '新規市場セグメントの開拓'
+        ]
+      }
+    }
   }
-}; 
+};   

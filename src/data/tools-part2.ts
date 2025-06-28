@@ -191,6 +191,237 @@ export const crmTools = [
       採用プロセスでの候補者評価や、チーム構成の最適化にも活用できます。
     `
   },
+  {
+    id: "10",
+    name: "Monday.com",
+    description: "ワークマネジメントプラットフォーム",
+    companyName: "monday.com",
+    logoUrl: "/logos/monday.png",
+    pricingModel: "サブスクリプション",
+    languages: ["ja", "en"],
+    targetSize: "中小企業",
+    slug: "monday-crm",
+    detailedDescription: `
+      Monday.comは、営業チームのワークフローを可視化・管理するプラットフォームです。
+      直感的なボード形式で、営業パイプラインを視覚的に管理できます。
+      カスタマイズ可能なワークフローにより、企業独自の営業プロセスに対応します。
+      自動化機能により、繰り返し作業を効率化できます。
+      チームコラボレーション機能で、情報共有を促進します。
+      豊富なテンプレートにより、すぐに利用を開始できます。
+      日本語インターフェースも提供されており、国内企業での導入も進んでいます。
+      中小企業向けの価格設定で、導入しやすい設計となっています。
+    `
+  },
+  {
+    id: "11",
+    name: "Airtable",
+    description: "クラウドベースのデータベース・CRMプラットフォーム",
+    companyName: "Airtable",
+    logoUrl: "/logos/airtable.png",
+    pricingModel: "フリーミアム",
+    languages: ["en"],
+    targetSize: "スタートアップ",
+    slug: "airtable-crm",
+    detailedDescription: `
+      Airtableは、スプレッドシートとデータベースの機能を組み合わせたプラットフォームです。
+      柔軟なデータ構造により、企業独自のCRMシステムを構築できます。
+      豊富なビュー機能（グリッド、カレンダー、ギャラリー等）で、データを多角的に表示できます。
+      自動化機能により、データ入力や通知を効率化できます。
+      APIを通じて、他のツールとの連携が容易です。
+      チーム共有機能により、リアルタイムでの協働が可能です。
+      無料プランから利用可能で、スタートアップに最適です。
+      使いやすいインターフェースで、技術的な知識がなくても利用できます。
+    `
+  },
+  {
+    id: "12",
+    name: "Notion",
+    description: "オールインワンワークスペース・CRM",
+    companyName: "Notion Labs",
+    logoUrl: "/logos/notion.png",
+    pricingModel: "フリーミアム",
+    languages: ["ja", "en"],
+    targetSize: "スタートアップ",
+    slug: "notion-crm",
+    detailedDescription: `
+      Notionは、ドキュメント、データベース、タスク管理を統合したワークスペースです。
+      柔軟なデータベース機能により、カスタムCRMシステムを構築できます。
+      テンプレート機能により、営業プロセスを標準化できます。
+      チーム全体での情報共有とコラボレーションを促進します。
+      豊富なブロック機能により、リッチなコンテンツを作成できます。
+      APIを通じて、他のツールとの連携が可能です。
+      日本語インターフェースも提供されており、国内での利用も増えています。
+      無料プランから利用可能で、小規模チームに最適です。
+    `
+  },
+  {
+    id: "13",
+    name: "Copper",
+    description: "Google Workspace統合CRM",
+    companyName: "Copper",
+    logoUrl: "/logos/copper.png",
+    pricingModel: "サブスクリプション",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "copper-crm",
+    detailedDescription: `
+      CopperはGoogle Workspaceとの深い統合を特徴とするCRMプラットフォームです。
+      Gmail、Google Calendar、Google Driveとシームレスに連携します。
+      自動データ入力機能により、手動作業を大幅に削減できます。
+      直感的なパイプライン管理で、営業プロセスを可視化します。
+      モバイルアプリにより、外出先でも営業活動を管理できます。
+      カスタマイズ可能なレポート機能で、営業活動を分析できます。
+      中小企業向けの価格設定で、導入しやすい設計となっています。
+      Google環境を利用している企業に特に適しています。
+    `
+  },
+  {
+    id: "14",
+    name: "Insightly",
+    description: "プロジェクト管理統合CRM",
+    companyName: "Insightly",
+    logoUrl: "/logos/insightly.png",
+    pricingModel: "フリーミアム",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "insightly-crm",
+    detailedDescription: `
+      InsightlyはCRMとプロジェクト管理を統合したプラットフォームです。
+      営業活動から案件実行まで、一貫した管理が可能です。
+      カスタマイズ可能なパイプラインで、企業独自のプロセスに対応します。
+      豊富なインテグレーションにより、既存ツールとの連携が容易です。
+      詳細なレポート機能で、営業とプロジェクトの両方を分析できます。
+      モバイルアプリにより、外出先でも業務を継続できます。
+      無料プランから利用可能で、段階的に機能を拡張できます。
+      中小企業やサービス業に特に適したソリューションです。
+    `
+  },
+  {
+    id: "15",
+    name: "Nimble",
+    description: "ソーシャルCRMプラットフォーム",
+    companyName: "Nimble",
+    logoUrl: "/logos/nimble.png",
+    pricingModel: "サブスクリプション",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "nimble-crm",
+    detailedDescription: `
+      Nimbleは、ソーシャルメディアとの統合に特化したCRMプラットフォームです。
+      LinkedIn、Twitter、Facebookなどのソーシャルデータを自動収集します。
+      統合受信箱により、メール、ソーシャルメッセージを一元管理できます。
+      コンタクトの社会的背景を把握し、より効果的なアプローチが可能です。
+      スマートコンタクト機能により、重複データを自動統合します。
+      モバイルアプリにより、外出先でも営業活動を継続できます。
+      中小企業向けの価格設定で、導入しやすい設計となっています。
+      ソーシャルセリングを重視する企業に最適です。
+    `
+  },
+  {
+    id: "16",
+    name: "Agile CRM",
+    description: "オールインワンCRMソリューション",
+    companyName: "Agile CRM",
+    logoUrl: "/logos/agile-crm.png",
+    pricingModel: "フリーミアム",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "agile-crm",
+    detailedDescription: `
+      Agile CRMは、営業、マーケティング、サービスを統合したプラットフォームです。
+      包括的な機能セットを手頃な価格で提供します。
+      マーケティング自動化機能により、リード育成を効率化できます。
+      ヘルプデスク機能により、顧客サポートも一元管理できます。
+      豊富なインテグレーションにより、既存ツールとの連携が可能です。
+      カスタマイズ可能なダッシュボードで、重要な指標を追跡できます。
+      無料プランから利用可能で、段階的に機能を拡張できます。
+      中小企業向けの包括的なソリューションとして人気があります。
+    `
+  },
+  {
+    id: "17",
+    name: "Capsule CRM",
+    description: "シンプルで使いやすいCRM",
+    companyName: "Capsule CRM",
+    logoUrl: "/logos/capsule.png",
+    pricingModel: "フリーミアム",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "capsule-crm",
+    detailedDescription: `
+      Capsule CRMは、シンプルさと使いやすさを重視したCRMプラットフォームです。
+      直感的なインターフェースで、すぐに利用を開始できます。
+      コンタクト管理、営業パイプライン、タスク管理の基本機能を提供します。
+      メール統合機能により、コミュニケーション履歴を自動記録します。
+      カスタムフィールドにより、企業独自のデータを管理できます。
+      モバイルアプリにより、外出先でも営業活動を継続できます。
+      無料プランから利用可能で、小規模チームに最適です。
+      複雑な機能よりもシンプルさを求める企業に適しています。
+    `
+  },
+  {
+    id: "18",
+    name: "Salesmate",
+    description: "モダンなCRMプラットフォーム",
+    companyName: "Salesmate",
+    logoUrl: "/logos/salesmate.png",
+    pricingModel: "サブスクリプション",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "salesmate-crm",
+    detailedDescription: `
+      Salesmateは、モダンなデザインと豊富な機能を備えたCRMプラットフォームです。
+      直感的なパイプライン管理で、営業プロセスを効率化します。
+      組み込みの電話・メール機能により、コミュニケーションを一元化できます。
+      自動化機能により、繰り返し作業を削減できます。
+      詳細な分析レポートで、営業活動の効果を測定できます。
+      豊富なインテグレーションにより、既存ツールとの連携が可能です。
+      モバイルアプリにより、外出先でも営業活動を管理できます。
+      中小企業向けの価格設定で、高機能を手頃な価格で利用できます。
+    `
+  },
+  {
+    id: "19",
+    name: "Streak",
+    description: "Gmail統合CRM",
+    companyName: "Streak",
+    logoUrl: "/logos/streak.png",
+    pricingModel: "フリーミアム",
+    languages: ["en"],
+    targetSize: "スタートアップ",
+    slug: "streak-crm",
+    detailedDescription: `
+      StreakはGmail内で直接利用できるCRMプラットフォームです。
+      Gmailの使い慣れたインターフェースで、営業活動を管理できます。
+      パイプライン機能により、案件の進捗を視覚的に追跡できます。
+      メール追跡機能により、顧客とのやり取りを自動記録します。
+      テンプレート機能により、効率的なメール作成が可能です。
+      チーム共有機能により、情報の透明性を向上させます。
+      無料プランから利用可能で、Gmailユーザーに最適です。
+      シンプルな機能で、営業初心者でも簡単に利用できます。
+    `
+  },
+  {
+    id: "20",
+    name: "Bitrix24",
+    description: "無料のCRM・コラボレーションプラットフォーム",
+    companyName: "Bitrix24",
+    logoUrl: "/logos/bitrix24.png",
+    pricingModel: "フリーミアム",
+    languages: ["ja", "en"],
+    targetSize: "中小企業",
+    slug: "bitrix24-crm",
+    detailedDescription: `
+      Bitrix24は、CRM、プロジェクト管理、コミュニケーションを統合したプラットフォームです。
+      無料プランでも豊富な機能を利用できます。
+      営業パイプライン、コンタクト管理、タスク管理を一元化できます。
+      チャット、ビデオ会議、ファイル共有機能を内蔵しています。
+      ウェブサイトビルダーやオンラインストア機能も提供します。
+      モバイルアプリにより、外出先でも業務を継続できます。
+      日本語インターフェースも提供されており、国内での利用も可能です。
+      小規模チームから中規模企業まで、幅広く対応できます。
+    `
+  }
 ];
 
 /**
@@ -356,5 +587,225 @@ export const proposalTools = [
     languages: ["en"],
     targetSize: "ミッドマーケット",
     slug: "navattic",
+    detailedDescription: `
+      Navatticは、インタラクティブな製品デモを作成するプラットフォームです。
+      実際のソフトウェアのような体験を提供し、見込み客の理解を深めます。
+      ノーコードでデモ環境を構築でき、技術的な知識がなくても利用できます。
+      分析機能により、デモの利用状況や効果を測定できます。
+      カスタマイズ可能なデモフローで、企業独自のユースケースに対応します。
+      リード獲得機能により、デモ利用者の情報を収集できます。
+      営業チームとマーケティングチームの両方で活用できます。
+      SaaS企業での導入が進んでいる新しいカテゴリのツールです。
+    `
   },
-]; 
+  {
+    id: "9",
+    name: "Qwilr",
+    description: "インタラクティブな提案書作成ツール",
+    companyName: "Qwilr",
+    logoUrl: "/logos/qwilr.png",
+    pricingModel: "サブスクリプション",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "qwilr-proposal",
+    detailedDescription: `
+      Qwilrは、ウェブページのようなインタラクティブな提案書を作成するツールです。
+      美しいデザインテンプレートにより、プロフェッショナルな提案書を作成できます。
+      インタラクティブな価格表や見積もり機能を組み込めます。
+      リアルタイムの閲覧追跡により、顧客の関心度を把握できます。
+      電子署名機能により、提案から契約まで一貫して管理できます。
+      CRMとの連携により、提案書データを自動同期できます。
+      モバイル対応により、どのデバイスでも美しく表示されます。
+      クリエイティブ業界やコンサルティング業界で人気があります。
+    `
+  },
+  {
+    id: "10",
+    name: "Better Proposals",
+    description: "営業提案書作成・管理プラットフォーム",
+    companyName: "Better Proposals",
+    logoUrl: "/logos/better-proposals.png",
+    pricingModel: "サブスクリプション",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "better-proposals",
+    detailedDescription: `
+      Better Proposalsは、効果的な営業提案書の作成に特化したプラットフォームです。
+      プロフェッショナルなテンプレートにより、印象的な提案書を作成できます。
+      電子署名機能により、提案から契約まで迅速に完了できます。
+      リアルタイムの通知により、顧客の提案書閲覧状況を把握できます。
+      価格表や見積もり機能により、正確な料金提示が可能です。
+      CRMとの連携により、顧客データを活用できます。
+      A/Bテスト機能により、最も効果的な提案書を特定できます。
+      中小企業やフリーランサーに人気の価格設定です。
+    `
+  },
+  {
+    id: "11",
+    name: "Vidyard",
+    description: "ビデオ営業・マーケティングプラットフォーム",
+    companyName: "Vidyard",
+    logoUrl: "/logos/vidyard.png",
+    pricingModel: "フリーミアム",
+    languages: ["en"],
+    targetSize: "ミッドマーケット",
+    slug: "vidyard-demo",
+    detailedDescription: `
+      Vidyardは、営業とマーケティングのためのビデオプラットフォームです。
+      パーソナライズされたビデオメッセージで、顧客エンゲージメントを向上させます。
+      画面録画機能により、製品デモを効率的に作成できます。
+      詳細な視聴分析により、顧客の関心度を把握できます。
+      CRMとの連携により、ビデオ活動を自動記録できます。
+      ビデオランディングページ機能により、効果的なキャンペーンを展開できます。
+      チーム機能により、ビデオコンテンツを組織全体で共有できます。
+      B2B営業における動画活用のリーディングプラットフォームです。
+    `
+  },
+  {
+    id: "12",
+    name: "BombBomb",
+    description: "ビデオメール・営業コミュニケーションツール",
+    companyName: "BombBomb",
+    logoUrl: "/logos/bombbomb.png",
+    pricingModel: "サブスクリプション",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "bombbomb-demo",
+    detailedDescription: `
+      BombBombは、ビデオメールによる営業コミュニケーションに特化したツールです。
+      パーソナライズされたビデオメッセージで、顧客との関係性を強化できます。
+      簡単な操作で、プロフェッショナルなビデオを作成できます。
+      メール統合機能により、既存のワークフローに組み込めます。
+      視聴追跡機能により、顧客の反応を把握できます。
+      CRMとの連携により、ビデオ活動を記録できます。
+      モバイルアプリにより、外出先でもビデオを作成・送信できます。
+      不動産、保険、金融業界で特に人気があります。
+    `
+  },
+  {
+    id: "13",
+    name: "Zoom",
+    description: "ビデオ会議・ウェビナープラットフォーム",
+    companyName: "Zoom",
+    logoUrl: "/logos/zoom.png",
+    pricingModel: "フリーミアム",
+    languages: ["ja", "en"],
+    targetSize: "エンタープライズ",
+    slug: "zoom-demo",
+    detailedDescription: `
+      Zoomは、世界最大級のビデオ会議プラットフォームです。
+      高品質なビデオ・音声通話により、効果的な営業プレゼンテーションが可能です。
+      画面共有機能により、製品デモを効果的に実施できます。
+      録画機能により、プレゼンテーション内容を後で共有できます。
+      ウェビナー機能により、大規模なデモンストレーションを開催できます。
+      カレンダー統合により、ミーティングスケジュールを効率化できます。
+      日本語インターフェースと充実したサポートを提供しています。
+      企業規模を問わず、営業活動に不可欠なツールとなっています。
+    `
+  },
+  {
+    id: "14",
+    name: "Microsoft Teams",
+    description: "統合コミュニケーション・コラボレーションプラットフォーム",
+    companyName: "Microsoft",
+    logoUrl: "/logos/teams.png",
+    pricingModel: "サブスクリプション",
+    languages: ["ja", "en"],
+    targetSize: "エンタープライズ",
+    slug: "teams-demo",
+    detailedDescription: `
+      Microsoft Teamsは、チャット、ビデオ会議、ファイル共有を統合したプラットフォームです。
+      Office 365との深い統合により、シームレスな業務環境を提供します。
+      高品質なビデオ会議機能により、効果的な営業プレゼンテーションが可能です。
+      画面共有・録画機能により、製品デモを効率的に実施できます。
+      チャネル機能により、案件ごとのコミュニケーションを整理できます。
+      豊富なアプリ統合により、営業ツールとの連携が可能です。
+      エンタープライズグレードのセキュリティを提供します。
+      Microsoft環境を利用している企業に特に適しています。
+    `
+  },
+  {
+    id: "15",
+    name: "Google Meet",
+    description: "Googleのビデオ会議ソリューション",
+    companyName: "Google",
+    logoUrl: "/logos/google-meet.png",
+    pricingModel: "フリーミアム",
+    languages: ["ja", "en"],
+    targetSize: "中小企業",
+    slug: "google-meet-demo",
+    detailedDescription: `
+      Google Meetは、Googleが提供するビデオ会議ソリューションです。
+      Google Workspaceとの統合により、シームレスなミーティング体験を提供します。
+      高品質なビデオ・音声通話により、効果的な営業プレゼンテーションが可能です。
+      画面共有機能により、製品デモを効率的に実施できます。
+      録画機能により、重要なミーティング内容を保存・共有できます。
+      カレンダー統合により、ミーティングスケジュールを自動化できます。
+      無料プランから利用可能で、中小企業に最適です。
+      Google環境を利用している企業に特に適しています。
+    `
+  },
+  {
+    id: "16",
+    name: "Calendly",
+    description: "スケジュール調整自動化ツール",
+    companyName: "Calendly",
+    logoUrl: "/logos/calendly.png",
+    pricingModel: "フリーミアム",
+    languages: ["en"],
+    targetSize: "スタートアップ",
+    slug: "calendly-demo",
+    detailedDescription: `
+      Calendlyは、ミーティングスケジュール調整を自動化するプラットフォームです。
+      営業担当者と顧客の間での煩雑なメールのやり取りを不要にします。
+      カレンダー統合により、空き時間を自動で管理できます。
+      ビデオ会議ツールとの連携により、ミーティングURLを自動生成します。
+      カスタマイズ可能な予約ページで、ブランドイメージを統一できます。
+      自動リマインダー機能により、ノーショーを削減できます。
+      チーム機能により、複数メンバーのスケジュールを統合管理できます。
+      無料プランから利用可能で、営業活動の効率化に貢献します。
+    `
+  },
+  {
+    id: "17",
+    name: "Acuity Scheduling",
+    description: "高度なスケジューリング・予約管理システム",
+    companyName: "Acuity Scheduling",
+    logoUrl: "/logos/acuity.png",
+    pricingModel: "サブスクリプション",
+    languages: ["en"],
+    targetSize: "中小企業",
+    slug: "acuity-scheduling",
+    detailedDescription: `
+      Acuity Schedulingは、高度なスケジューリング機能を備えた予約管理システムです。
+      複雑な予約ルールや条件設定に対応できます。
+      オンライン決済機能により、予約と同時に料金を徴収できます。
+      カスタマイズ可能なフォームで、詳細な顧客情報を収集できます。
+      自動リマインダーとフォローアップ機能を提供します。
+      複数のカレンダーとの同期により、ダブルブッキングを防止できます。
+      詳細な分析レポートで、予約状況を把握できます。
+      サービス業や個人事業主に特に適したソリューションです。
+    `
+  },
+  {
+    id: "18",
+    name: "Doodle",
+    description: "グループスケジューリング・投票ツール",
+    companyName: "Doodle",
+    logoUrl: "/logos/doodle.png",
+    pricingModel: "フリーミアム",
+    languages: ["ja", "en"],
+    targetSize: "中小企業",
+    slug: "doodle-scheduling",
+    detailedDescription: `
+      Doodleは、複数人でのミーティング調整を効率化するツールです。
+      投票機能により、参加者全員の都合を簡単に確認できます。
+      カレンダー統合により、空き時間を自動で提案できます。
+      グループ投票機能で、最適な日程を民主的に決定できます。
+      ビデオ会議ツールとの連携により、オンラインミーティングを設定できます。
+      モバイルアプリにより、外出先でも日程調整が可能です。
+      日本語インターフェースも提供されており、国内での利用も可能です。
+      無料プランから利用可能で、チームでの日程調整に最適です。
+    `
+  }
+];     
