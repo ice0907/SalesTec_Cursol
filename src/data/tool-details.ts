@@ -7589,5 +7589,467 @@ export const toolDetails: Record<string, {
         ]
       }
     }
+  },
+  'apollo': {
+    company: {
+      name: 'Apollo',
+      foundedDate: '2015年',
+      employeeCount: '約500人（2023年）',
+      revenue: '約150億円（2023年度）',
+      customerCount: '1万社以上',
+      notableCustomers: ['Zoom', 'Copper', 'Outreach', 'Gong', 'Calendly'],
+      headquarters: 'サンフランシスコ、カリフォルニア州、アメリカ',
+      website: 'https://apollo.io'
+    },
+    products: [
+      {
+        name: 'Apollo',
+        description: 'セールスインテリジェンス・リードジェネレーションプラットフォーム',
+        features: [
+          'リードジェネレーション',
+          'セールスインテリジェンス',
+          'メールシーケンス',
+          'CRM統合',
+          'データエンリッチメント',
+          'プロスペクティング',
+          'セールス分析',
+          'コンタクト管理'
+        ],
+        pricing: {
+          model: 'フリーミアム',
+          plans: [
+            { name: 'Free', price: '¥0', description: '基本機能、月1,000コンタクト' },
+            { name: 'Basic', price: '¥6,900', description: '高度な検索、月5,000コンタクト' },
+            { name: 'Professional', price: '¥13,800', description: 'メールシーケンス、無制限コンタクト' },
+            { name: 'Organization', price: '要相談', description: 'エンタープライズ機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['中小企業', 'スタートアップ', 'セールスチーム']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          '包括的なセールスプラットフォーム',
+          '豊富なデータベース',
+          'フリーミアムモデル',
+          '使いやすいインターフェース'
+        ],
+        analysis: '包括的なセールスインテリジェンスプラットフォームにより、リードジェネレーションからクロージングまで一元管理を実現'
+      },
+      competitor: {
+        points: [
+          'ZoomInfo、Outreachとの競合',
+          '統合プラットフォームの差別化',
+          'フリーミアムの優位性',
+          '中小企業特化の強み'
+        ],
+        analysis: 'セールスインテリジェンス市場で、統合プラットフォームとフリーミアムモデルを武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'アメリカ発のセールステック企業',
+          '急速な成長',
+          'セールス特化',
+          '中小企業重視'
+        ],
+        analysis: 'セールスインテリジェンスのリーダーとして、中小企業のセールス効率化市場で存在感を発揮'
+      },
+      commodity: {
+        points: [
+          'セールスインテリジェンスプラットフォーム',
+          'リードジェネレーションツール',
+          'セールス自動化ツール',
+          'CRM統合プラットフォーム'
+        ],
+        analysis: 'セールスインテリジェンス・リードジェネレーションプラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の強化',
+          'データ品質の向上',
+          'ユーザー体験の改善'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新機能の追加'
+        ],
+        longTerm: [
+          'セールスインテリジェンス市場のリーダーポジション確立',
+          'AI駆動セールス自動化の実現',
+          '包括的なセールスプラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'clearbit': {
+    company: {
+      name: 'Clearbit',
+      foundedDate: '2014年',
+      employeeCount: '約200人（2023年）',
+      revenue: '約100億円（2023年度）',
+      customerCount: '5,000社以上',
+      notableCustomers: ['Segment', 'Asana', 'Zendesk', 'Stripe', 'Intercom'],
+      headquarters: 'サンフランシスコ、カリフォルニア州、アメリカ',
+      website: 'https://clearbit.com'
+    },
+    products: [
+      {
+        name: 'Clearbit',
+        description: 'B2Bデータエンリッチメント・リードジェネレーションプラットフォーム',
+        features: [
+          'データエンリッチメント',
+          'リードジェネレーション',
+          'プロスペクティング',
+          'API統合',
+          'リアルタイムデータ',
+          'セグメンテーション',
+          'データ検証',
+          'CRM統合'
+        ],
+        pricing: {
+          model: 'API課金',
+          plans: [
+            { name: 'Starter', price: '¥6,900', description: '基本データエンリッチメント' },
+            { name: 'Growth', price: '¥20,700', description: '高度な機能、大量データ' },
+            { name: 'Enterprise', price: '要相談', description: 'カスタム機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['SaaS企業', 'マーケティングチーム', 'セールスチーム']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'リアルタイムデータエンリッチメント',
+          '高品質なB2Bデータ',
+          'API優先設計',
+          '豊富な統合オプション'
+        ],
+        analysis: 'リアルタイムデータエンリッチメントにより、顧客データの品質向上とセールス効率化を実現'
+      },
+      competitor: {
+        points: [
+          'ZoomInfo、Lusha との競合',
+          'API優先の差別化',
+          'データ品質の優位性',
+          'SaaS特化の強み'
+        ],
+        analysis: 'データエンリッチメント市場で、API優先設計と高品質データを武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'アメリカ発のデータ企業',
+          'API重視',
+          '安定した成長',
+          'データ品質特化'
+        ],
+        analysis: 'B2Bデータエンリッチメントのリーダーとして、SaaS企業のデータ活用市場で独自のポジションを確立'
+      },
+      commodity: {
+        points: [
+          'B2Bデータエンリッチメントプラットフォーム',
+          'リードジェネレーションツール',
+          'データ検証ツール',
+          'API統合プラットフォーム'
+        ],
+        analysis: 'B2Bデータエンリッチメント・リードジェネレーションプラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の追加',
+          'データ品質の向上',
+          'API機能の拡充'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新データソースの追加'
+        ],
+        longTerm: [
+          'B2Bデータエンリッチメント市場のリーダーポジション維持',
+          'AI駆動データインテリジェンスの実現',
+          '包括的なデータプラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'hunter': {
+    company: {
+      name: 'Hunter',
+      foundedDate: '2015年',
+      employeeCount: '約50人（2023年）',
+      revenue: '約20億円（2023年度）',
+      customerCount: '4百万人以上',
+      notableCustomers: ['Google', 'Microsoft', 'Adobe', 'IBM', 'Shopify'],
+      headquarters: 'リヨン、フランス',
+      website: 'https://hunter.io'
+    },
+    products: [
+      {
+        name: 'Hunter',
+        description: 'メールファインダー・リードジェネレーションツール',
+        features: [
+          'メールファインダー',
+          'ドメイン検索',
+          'メール検証',
+          'リードジェネレーション',
+          'Chrome拡張機能',
+          'API統合',
+          'バルク検索',
+          'CRM統合'
+        ],
+        pricing: {
+          model: 'フリーミアム',
+          plans: [
+            { name: 'Free', price: '¥0', description: '月25回検索' },
+            { name: 'Starter', price: '¥6,900', description: '月500回検索' },
+            { name: 'Growth', price: '¥13,800', description: '月5,000回検索' },
+            { name: 'Business', price: '¥69,000', description: '月50,000回検索' }
+          ]
+        },
+        targetMarket: ['中小企業', 'フリーランサー', 'マーケティングチーム']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'シンプルなメールファインダー',
+          '高い検索精度',
+          'フリーミアムモデル',
+          '使いやすいインターフェース'
+        ],
+        analysis: 'シンプルで高精度なメールファインダーにより、効率的なリードジェネレーションを実現'
+      },
+      competitor: {
+        points: [
+          'Lusha、Voila Norbert との競合',
+          'シンプルさの差別化',
+          'フリーミアムの優位性',
+          '中小企業特化の強み'
+        ],
+        analysis: 'メールファインダー市場で、シンプルさとフリーミアムモデルを武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'フランス発のメールツール企業',
+          'シンプル重視',
+          '安定した成長',
+          'メール特化'
+        ],
+        analysis: 'メールファインダーのリーダーとして、中小企業のリードジェネレーション市場で存在感を発揮'
+      },
+      commodity: {
+        points: [
+          'メールファインダーツール',
+          'リードジェネレーションツール',
+          'メール検証ツール',
+          'プロスペクティングツール'
+        ],
+        analysis: 'メールファインダー・リードジェネレーションツール'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の追加',
+          '検索精度の向上',
+          'ユーザー体験の改善'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新機能の追加'
+        ],
+        longTerm: [
+          'メールファインダー市場のリーダーポジション維持',
+          'AI駆動プロスペクティングの実現',
+          '包括的なリードジェネレーションプラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'leadiq': {
+    company: {
+      name: 'LeadIQ',
+      foundedDate: '2015年',
+      employeeCount: '約100人（2023年）',
+      revenue: '約50億円（2023年度）',
+      customerCount: '2,000社以上',
+      notableCustomers: ['Zoom', 'Okta', 'Snowflake', 'Databricks', 'Confluent'],
+      headquarters: 'サンフランシスコ、カリフォルニア州、アメリカ',
+      website: 'https://leadiq.com'
+    },
+    products: [
+      {
+        name: 'LeadIQ',
+        description: 'セールスプロスペクティング・リードジェネレーションプラットフォーム',
+        features: [
+          'プロスペクティング',
+          'リードジェネレーション',
+          'CRM統合',
+          'メールシーケンス',
+          'データエンリッチメント',
+          'セールス分析',
+          'Chrome拡張機能',
+          'チーム管理'
+        ],
+        pricing: {
+          model: 'サブスクリプション',
+          plans: [
+            { name: 'Starter', price: '¥6,900', description: '基本プロスペクティング機能' },
+            { name: 'Professional', price: '¥13,800', description: '高度な機能、メールシーケンス' },
+            { name: 'Enterprise', price: '要相談', description: 'カスタム機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['中小企業', 'セールスチーム', 'スタートアップ']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'セールス特化プロスペクティング',
+          'CRM統合',
+          'チーム協働機能',
+          'データ品質重視'
+        ],
+        analysis: 'セールス特化のプロスペクティングプラットフォームにより、効率的なリードジェネレーションとチーム協働を実現'
+      },
+      competitor: {
+        points: [
+          'Outreach、SalesLoft との競合',
+          'プロスペクティング特化の差別化',
+          'チーム機能の優位性',
+          '中小企業特化の強み'
+        ],
+        analysis: 'セールスプロスペクティング市場で、チーム協働機能と中小企業特化を武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'アメリカ発のセールステック企業',
+          'プロスペクティング重視',
+          '安定した成長',
+          'セールス特化'
+        ],
+        analysis: 'セールスプロスペクティングのリーダーとして、中小企業のセールス効率化市場で存在感を発揮'
+      },
+      commodity: {
+        points: [
+          'セールスプロスペクティングプラットフォーム',
+          'リードジェネレーションツール',
+          'CRM統合ツール',
+          'セールス分析ツール'
+        ],
+        analysis: 'セールスプロスペクティング・リードジェネレーションプラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の強化',
+          'データ品質の向上',
+          'ユーザー体験の改善'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新機能の追加'
+        ],
+        longTerm: [
+          'セールスプロスペクティング市場のリーダーポジション確立',
+          'AI駆動セールス自動化の実現',
+          '包括的なセールスプラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'datanyze': {
+    company: {
+      name: 'Datanyze',
+      foundedDate: '2012年',
+      employeeCount: '約50人（2023年）',
+      revenue: '約30億円（2023年度）',
+      customerCount: '1,000社以上',
+      notableCustomers: ['Salesforce', 'HubSpot', 'Marketo', 'Pardot', 'Eloqua'],
+      headquarters: 'サンフランシスコ、カリフォルニア州、アメリカ',
+      website: 'https://datanyze.com'
+    },
+    products: [
+      {
+        name: 'Datanyze',
+        description: 'テクノロジーインテリジェンス・リードジェネレーションプラットフォーム',
+        features: [
+          'テクノロジー検出',
+          'リードジェネレーション',
+          'プロスペクティング',
+          'CRM統合',
+          'データエンリッチメント',
+          'Chrome拡張機能',
+          'API統合',
+          'セールス分析'
+        ],
+        pricing: {
+          model: 'サブスクリプション',
+          plans: [
+            { name: 'Basic', price: '¥13,800', description: '基本テクノロジー検出機能' },
+            { name: 'Professional', price: '¥27,600', description: '高度な機能、大量データ' },
+            { name: 'Enterprise', price: '要相談', description: 'カスタム機能、専用サポート' }
+          ]
+        },
+        targetMarket: ['テクノロジー企業', 'セールスチーム', 'マーケティングチーム']
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'テクノロジー特化インテリジェンス',
+          'リアルタイム検出',
+          'CRM統合',
+          '豊富なテクノロジーデータ'
+        ],
+        analysis: 'テクノロジー特化のインテリジェンスプラットフォームにより、技術スタックベースのターゲティングを実現'
+      },
+      competitor: {
+        points: [
+          'BuiltWith、Wappalyzer との競合',
+          'テクノロジー特化の差別化',
+          'セールス統合の優位性',
+          'B2B特化の強み'
+        ],
+        analysis: 'テクノロジーインテリジェンス市場で、セールス統合とB2B特化を武器に競合他社と差別化'
+      },
+      company: {
+        points: [
+          'アメリカ発のテクノロジーインテリジェンス企業',
+          'テクノロジー重視',
+          '安定した成長',
+          'B2B特化'
+        ],
+        analysis: 'テクノロジーインテリジェンスのリーダーとして、B2Bセールスのテクノロジーターゲティング市場で独自のポジションを確立'
+      },
+      commodity: {
+        points: [
+          'テクノロジーインテリジェンスプラットフォーム',
+          'リードジェネレーションツール',
+          'プロスペクティングツール',
+          'セールス分析ツール'
+        ],
+        analysis: 'テクノロジーインテリジェンス・リードジェネレーションプラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の追加',
+          'テクノロジー検出精度の向上',
+          'ユーザー体験の改善'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          '新テクノロジーの追加'
+        ],
+        longTerm: [
+          'テクノロジーインテリジェンス市場のリーダーポジション維持',
+          'AI駆動テクノロジー分析の実現',
+          '包括的なテクノロジーインテリジェンスプラットフォームへの進化'
+        ]
+      }
+    }
   }
-};                                                                             
+};                                                                                   
