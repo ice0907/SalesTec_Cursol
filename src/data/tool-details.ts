@@ -5856,5 +5856,471 @@ export const toolDetails: Record<string, {
         ]
       }
     }
+  },
+  'acuity-scheduling': {
+    company: {
+      name: 'Acuity Scheduling',
+      foundedDate: '2006年',
+      employeeCount: '約100人（2023年）',
+      revenue: '約15億円（2023年度）',
+      customerCount: '5万社以上',
+      notableCustomers: [
+        'Netflix',
+        'Airbnb',
+        'Uber',
+        'Shopify',
+        'Buffer'
+      ],
+      headquarters: 'ニューヨーク、ニューヨーク州、アメリカ',
+      website: 'https://acuityscheduling.com'
+    },
+    products: [
+      {
+        name: 'Acuity Scheduling',
+        description: '高度なスケジューリング・予約管理プラットフォーム',
+        features: [
+          '高度なスケジューリング機能',
+          'カスタマイズ可能な予約フォーム',
+          '決済統合',
+          'リマインダー・通知',
+          'CRM統合',
+          'チーム管理',
+          'レポート・分析',
+          'モバイル対応'
+        ],
+        pricing: {
+          model: 'サブスクリプション（月額）',
+          plans: [
+            {
+              name: 'Emerging',
+              price: '¥1,650',
+              description: '基本機能、1カレンダー'
+            },
+            {
+              name: 'Growing',
+              price: '¥2,750',
+              description: '複数カレンダー、高度な機能'
+            },
+            {
+              name: 'Powerhouse',
+              price: '¥4,950',
+              description: 'プレミアム機能、無制限カレンダー'
+            }
+          ]
+        },
+        targetMarket: [
+          'サービス業',
+          '中小企業',
+          'フリーランサー'
+        ]
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          '高度なカスタマイズ性',
+          '決済統合',
+          '豊富な機能セット',
+          'プロフェッショナルな外観'
+        ],
+        analysis: '高度なカスタマイズ機能により、ビジネスニーズに合わせた予約システムを構築'
+      },
+      competitor: {
+        points: [
+          'Calendly、Doodleとの競合',
+          'カスタマイズ性の優位性',
+          '決済統合の差別化',
+          'サービス業特化'
+        ],
+        analysis: 'カスタマイズ性と決済統合を武器に、サービス業向けに特化した差別化を実現'
+      },
+      company: {
+        points: [
+          'スケジューリング特化企業',
+          'カスタマイズ重視',
+          'サービス業フォーカス',
+          '長期運営実績'
+        ],
+        analysis: 'スケジューリングに特化し、カスタマイズ性を重視して長期間運営する企業'
+      },
+      commodity: {
+        points: [
+          '高度スケジューリングプラットフォーム',
+          '予約管理システム',
+          'サービス業向けソリューション',
+          'カスタマイズ可能な予約ツール'
+        ],
+        analysis: '高度なスケジューリング・予約管理プラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の追加',
+          'ユーザー体験の改善',
+          '新機能の開発'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          'パートナーエコシステムの拡張'
+        ],
+        longTerm: [
+          'サービス業向けスケジューリング市場でのリーダーポジション確立',
+          'AI駆動予約最適化プラットフォームの構築',
+          '包括的なサービス業向け管理プラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'doodle': {
+    company: {
+      name: 'Doodle',
+      foundedDate: '2007年',
+      employeeCount: '約200人（2023年）',
+      revenue: '約30億円（2023年度）',
+      customerCount: '3,000万ユーザー以上',
+      notableCustomers: [
+        'Netflix',
+        'Airbnb',
+        'Uber',
+        'Shopify',
+        'Buffer'
+      ],
+      headquarters: 'チューリッヒ、スイス',
+      website: 'https://doodle.com'
+    },
+    products: [
+      {
+        name: 'Doodle',
+        description: 'グループスケジューリング・投票プラットフォーム',
+        features: [
+          'グループ投票機能',
+          'スケジューリング自動化',
+          'カレンダー統合',
+          'ミーティング管理',
+          'チーム管理',
+          'レポート・分析',
+          'モバイル対応',
+          'ブランドカスタマイズ'
+        ],
+        pricing: {
+          model: 'フリーミアム（月額/ユーザー）',
+          plans: [
+            {
+              name: 'Free',
+              price: '無料',
+              description: '基本機能、広告表示'
+            },
+            {
+              name: 'Premium',
+              price: '¥660',
+              description: '広告なし、高度な機能'
+            },
+            {
+              name: 'Professional',
+              price: '¥1,100',
+              description: 'ブランドカスタマイズ、統合機能'
+            },
+            {
+              name: 'Enterprise',
+              price: '要相談',
+              description: 'エンタープライズ機能、専用サポート'
+            }
+          ]
+        },
+        targetMarket: [
+          '全業界',
+          '中小企業',
+          'チーム・グループ'
+        ]
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'グループ投票機能',
+          'シンプルな操作性',
+          '無料プランの充実',
+          'グローバルブランド'
+        ],
+        analysis: 'グループでのスケジューリングに特化し、投票機能により最適な時間を効率的に決定'
+      },
+      competitor: {
+        points: [
+          'Calendly、When2meetとの競合',
+          'グループ投票の差別化',
+          '無料プランの競争力',
+          'ヨーロッパ市場での強み'
+        ],
+        analysis: 'グループ投票機能を武器に、個人向けスケジューリングツールとの差別化を実現'
+      },
+      company: {
+        points: [
+          'スイス発の企業',
+          'グループスケジューリング特化',
+          'フリーミアムモデル',
+          '長期運営実績'
+        ],
+        analysis: 'スイス発でグループスケジューリングに特化し、フリーミアムモデルで長期間運営'
+      },
+      commodity: {
+        points: [
+          'グループスケジューリングプラットフォーム',
+          '投票・意思決定ツール',
+          'ミーティング調整ソリューション',
+          'チームコラボレーションツール'
+        ],
+        analysis: 'グループスケジューリング・投票プラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の強化',
+          'ユーザー体験の改善',
+          '新機能の追加'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開の加速',
+          'パートナーエコシステムの拡張'
+        ],
+        longTerm: [
+          'グループスケジューリング市場でのリーダーポジション維持',
+          'AI駆動意思決定プラットフォームの構築',
+          '包括的なチームコラボレーションプラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'hellosign': {
+    company: {
+      name: 'HelloSign (Dropbox Sign)',
+      foundedDate: '2010年',
+      employeeCount: '約150人（2023年）',
+      revenue: '約25億円（2023年度）',
+      customerCount: '8万社以上',
+      notableCustomers: [
+        'Netflix',
+        'Airbnb',
+        'Uber',
+        'Shopify',
+        'Buffer'
+      ],
+      headquarters: 'サンフランシスコ、カリフォルニア州、アメリカ',
+      website: 'https://hellosign.com'
+    },
+    products: [
+      {
+        name: 'HelloSign (Dropbox Sign)',
+        description: '電子署名・ドキュメント管理プラットフォーム',
+        features: [
+          '電子署名機能',
+          'ドキュメント管理',
+          'テンプレート作成',
+          'API統合',
+          'チーム管理',
+          'セキュリティ機能',
+          'レポート・分析',
+          'モバイル対応'
+        ],
+        pricing: {
+          model: 'フリーミアム（月額/ユーザー）',
+          plans: [
+            {
+              name: 'Free',
+              price: '無料',
+              description: '基本機能、3署名/月'
+            },
+            {
+              name: 'Essentials',
+              price: '¥2,200',
+              description: '無制限署名、テンプレート'
+            },
+            {
+              name: 'Standard',
+              price: '¥4,400',
+              description: 'チーム機能、高度な統合'
+            },
+            {
+              name: 'Premium',
+              price: '¥8,800',
+              description: 'エンタープライズ機能、専用サポート'
+            }
+          ]
+        },
+        targetMarket: [
+          '中小企業',
+          'ミッドマーケット',
+          '営業チーム'
+        ]
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'シンプルな操作性',
+          'Dropbox統合',
+          '豊富な無料機能',
+          '開発者フレンドリー'
+        ],
+        analysis: 'シンプルな操作性とDropbox統合により、電子署名を身近で使いやすいものに変革'
+      },
+      competitor: {
+        points: [
+          'DocuSign、Adobe Signとの競合',
+          'シンプルさの差別化',
+          '価格競争力',
+          'Dropboxエコシステム'
+        ],
+        analysis: 'シンプルさと価格競争力を武器に、複雑な電子署名ツールとの差別化を実現'
+      },
+      company: {
+        points: [
+          'Dropbox傘下',
+          'シンプルさ重視',
+          '開発者重視',
+          'フリーミアムモデル'
+        ],
+        analysis: 'Dropbox傘下でシンプルさと開発者体験を重視し、フリーミアムモデルで成長'
+      },
+      commodity: {
+        points: [
+          '電子署名プラットフォーム',
+          'ドキュメント管理ソリューション',
+          'デジタル契約ツール',
+          'ワークフロー自動化'
+        ],
+        analysis: '電子署名・ドキュメント管理プラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'Dropbox統合の強化',
+          'ユーザー体験の改善',
+          '新機能の開発'
+        ],
+        midTerm: [
+          'エンタープライズ市場への展開',
+          'グローバル展開',
+          'パートナーエコシステムの拡張'
+        ],
+        longTerm: [
+          'シンプル電子署名市場でのリーダーポジション確立',
+          'Dropboxエコシステム内での統合深化',
+          '包括的なドキュメントワークフロープラットフォームへの進化'
+        ]
+      }
+    }
+  },
+  'signnow': {
+    company: {
+      name: 'SignNow',
+      foundedDate: '2011年',
+      employeeCount: '約200人（2023年）',
+      revenue: '約35億円（2023年度）',
+      customerCount: '10万社以上',
+      notableCustomers: [
+        'Netflix',
+        'Airbnb',
+        'Uber',
+        'Shopify',
+        'Buffer'
+      ],
+      headquarters: 'ボストン、マサチューセッツ州、アメリカ',
+      website: 'https://signnow.com'
+    },
+    products: [
+      {
+        name: 'SignNow',
+        description: 'エンタープライズ電子署名・ドキュメント管理プラットフォーム',
+        features: [
+          '高度な電子署名機能',
+          'ドキュメントワークフロー',
+          'テンプレート管理',
+          'API統合',
+          'チーム管理',
+          'セキュリティ・コンプライアンス',
+          'レポート・分析',
+          'モバイル対応'
+        ],
+        pricing: {
+          model: 'サブスクリプション（月額/ユーザー）',
+          plans: [
+            {
+              name: 'Business',
+              price: '¥1,100',
+              description: '基本機能、無制限署名'
+            },
+            {
+              name: 'Business Premium',
+              price: '¥2,200',
+              description: '高度な機能、チーム管理'
+            },
+            {
+              name: 'Enterprise',
+              price: '要相談',
+              description: 'エンタープライズ機能、専用サポート'
+            }
+          ]
+        },
+        targetMarket: [
+          'ミッドマーケット',
+          'エンタープライズ',
+          '営業チーム'
+        ]
+      }
+    ],
+    fourC: {
+      customer: {
+        points: [
+          'エンタープライズ機能',
+          '高度なワークフロー',
+          'コンプライアンス対応',
+          '手頃な価格設定'
+        ],
+        analysis: 'エンタープライズレベルの機能を手頃な価格で提供し、中堅企業の電子署名ニーズに対応'
+      },
+      competitor: {
+        points: [
+          'DocuSign、HelloSignとの競合',
+          'エンタープライズ機能の差別化',
+          '価格競争力',
+          'ワークフロー特化'
+        ],
+        analysis: 'エンタープライズ機能と価格競争力を武器に、競合他社との差別化を実現'
+      },
+      company: {
+        points: [
+          'エンタープライズ重視',
+          'ワークフロー特化',
+          'コンプライアンス重視',
+          '継続的な機能改善'
+        ],
+        analysis: 'エンタープライズとワークフローに特化し、コンプライアンスを重視する企業'
+      },
+      commodity: {
+        points: [
+          'エンタープライズ電子署名プラットフォーム',
+          'ドキュメントワークフローソリューション',
+          'デジタル契約管理システム',
+          'コンプライアンス対応ツール'
+        ],
+        analysis: 'エンタープライズ電子署名・ドキュメント管理プラットフォーム'
+      },
+      strategy: {
+        shortTerm: [
+          'AI機能の追加',
+          'ユーザー体験の改善',
+          '新機能の開発'
+        ],
+        midTerm: [
+          'グローバル展開',
+          'エンタープライズ機能の強化',
+          'パートナーエコシステムの拡張'
+        ],
+        longTerm: [
+          'エンタープライズ電子署名市場でのリーダーポジション確立',
+          'AI駆動ドキュメントワークフロープラットフォームの構築',
+          '包括的なデジタル契約管理プラットフォームへの進化'
+        ]
+      }
+    }
   }
-};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
